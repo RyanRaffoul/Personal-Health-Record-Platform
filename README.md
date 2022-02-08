@@ -1,5 +1,5 @@
 # Personal-Health-Record-Platform
-A Personal Health Record Platform for patients to achieve different functionalities with a PHR and a Health Care Professionals to view patients PHRs when given permission
+A Personal Health Record Platform for patients to achieve different functionalities with a PHR and Health Care Professionals to view patients PHRs when given permission
 
 # Blockchain Technolgoies
 A Ethereum Proof-of-Authority Permissioned Blockchain was created to store patients PHRs and Healthcare Professionals Permissions in a safe and secure way. Smart Contracts with mappings were used.
