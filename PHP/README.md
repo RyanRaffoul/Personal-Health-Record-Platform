@@ -1,1 +1,1 @@
-# All PHP Code Located Here
+# All PHP CODE LOCATED HERE
