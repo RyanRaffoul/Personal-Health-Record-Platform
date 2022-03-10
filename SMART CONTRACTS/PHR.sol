@@ -6,7 +6,7 @@ contract PHR{
     // hash of PHR and DB index
     struct patientPHR{
         string phrHash;
-        uint phrDBIndx;
+        uint phrDBIndex;
     }
 
     mapping(string => patientPHR) patientPHRs;
