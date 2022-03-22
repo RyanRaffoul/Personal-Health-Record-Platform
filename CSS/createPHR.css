@@ -1,0 +1,804 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+}
+
+body {
+	background: #F5F5F5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: Helvetica, sans-serif;
+	margin: -20px 0 50px;
+}
+
+.container {
+	background-color: #F5F5F5;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 65em;
+	height: 44.5em;
+	margin-top: 1em;
+}
+
+.patientTitle{
+    padding-top:0.7em;
+    font-family: Helvetica, sans-serif;
+    text-align:center;
+    color:#303030;
+    margin-bottom: 0.6em;
+}
+
+input[type=text]{
+    padding: 8px 11px;
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    font-size:1em;
+    width:20em;
+    margin-bottom:0.6em;
+    margin-left:5em;
+}
+
+input[type=text]:focus{
+    border: 1px solid #FF6347;
+}
+
+input[type=password]{
+    padding: 8px 11px;
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    font-size:1em;
+    width:20em;
+    margin-left:5em;
+}
+
+input[type=password]:focus{
+    border: 1px solid #FF6347;
+}
+
+.create{
+    padding: 6px 12px;
+    display: block;
+    background-color: #FF6347;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width:17em;
+    height:2em;
+    cursor: pointer;
+    margin-top:0.5em;
+    font-family: Helvetica, sans-serif;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size:1.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 19em;
+    margin-top: 2em;
+}
+
+.create:hover{
+    background-color: #A0A0A0;
+}
+
+.header{
+    margin-top:2em;
+}
+
+.header img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 25%;
+    border: 5px solid #f5f5f5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 24.5em;
+}
+
+.header h1{
+    position: relative;
+    top: 18px;
+    left: 12px;
+    font-family: Helvetica, sans-serif;
+    color:#303030;
+}
+
+.header h2{
+    font-family: Helvetica, sans-serif;
+    color:#303030;
+    text-align: center;
+}
+
+.variables{
+    background-color: #F5F5F5;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 12em;
+	height: 12em;
+	margin-top: 2em;
+    float: left;
+    margin-left:3.3em;
+}
+
+.variables:hover{
+    background-color: #DCDCDC;
+}
+
+.variables h3{
+    font-family: Helvetica, sans-serif;
+    color:#303030;
+    text-align: center;
+}
+
+#icon{
+    font-size:48px;
+    color:#696969;
+    margin-left: 1.7em;
+    margin-top:1em;
+}
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 5px 8px;
+	margin: 8px 0;
+	width: 80%;
+    margin-left: 4.5em;
+}
+
+input:focus{
+	border: 1px solid #FF6347;
+}
+
+select{
+	background-color: #eee;
+	border: none;
+	padding: 5px 8px;
+	margin: 8px 0;
+	width: 80%;
+    margin-left: 4.5em;
+}
+
+.done{
+    padding: 6px 12px;
+    display: block;
+    background-color: #FF6347;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width:17em;
+    height:2em;
+    cursor: pointer;
+    margin-top:0.5em;
+    font-family: Helvetica, sans-serif;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size:1.2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 7.4em;
+    margin-top: 2em;
+}
+
+.done:hover{
+    background-color: #A0A0A0;
+}
+
+#personalinfooverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.personalinfooverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    height:85%;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+}
+
+.personalinfooverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+#doctoroverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.doctoroverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+    height:80%;
+    overflow: auto;
+}
+
+.doctoroverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.doctoroverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+#emergencyoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.emergencyoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.emergencyoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.emergencyoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+#covidoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.covidoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.covidoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+#allergiesoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.allergiesoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.allergiesoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.allergiesoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+#medicationoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.medicationoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.medicationoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.medicationoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+.medicationoverlaycontent textarea{
+    cursor:pointer;
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin:auto;
+    width:80%;
+    height:30%;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:10px;
+    font-size: 15px;
+    color:gray;
+    text-align: left;
+    padding:5px;
+}
+
+#illnessesoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.illnessesoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.illnessesoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.illnessesoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+.illnessesoverlaycontent textarea{
+    cursor:pointer;
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin:auto;
+    width:80%;
+    height:30%;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:10px;
+    font-size: 15px;
+    color:gray;
+    text-align: left;
+    padding:5px;
+}
+
+#surgeriesoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.surgeriesoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.surgeriesoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.surgeriesoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+.surgeriesoverlaycontent textarea{
+    cursor:pointer;
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin:auto;
+    width:80%;
+    height:30%;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:10px;
+    font-size: 15px;
+    color:gray;
+    text-align: left;
+    padding:5px;
+}
+
+#healthproblemsoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.healthproblemsoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.healthproblemsoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.healthproblemsoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+.healthproblemsoverlaycontent textarea{
+    cursor:pointer;
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin:auto;
+    width:80%;
+    height:30%;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:10px;
+    font-size: 15px;
+    color:gray;
+    text-align: left;
+    padding:5px;
+}
+
+#exerciseoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.exerciseoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.exerciseoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.exerciseoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+#dietaryhabitsoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.dietaryhabitsoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.dietaryhabitsoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.dietaryhabitsoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+.dietaryhabitsoverlaycontent textarea{
+    cursor:pointer;
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin:auto;
+    width:80%;
+    height:30%;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:10px;
+    font-size: 15px;
+    color:gray;
+    text-align: left;
+    padding:5px;
+}
+
+#healthgoalsoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.healthgoalsoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 2.1em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.healthgoalsoverlaycontent h2{
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.healthgoalsoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+.healthgoalsoverlaycontent textarea{
+    cursor:pointer;
+    display: block;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin:auto;
+    width:80%;
+    height:30%;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:10px;
+    font-size: 15px;
+    color:gray;
+    text-align: left;
+    padding:5px;
+}
+
+#addedoverlay{
+    position: fixed;
+    display: none;
+    width: 100%;
+    max-height: 200%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.addedoverlaycontent{
+    background-color: #F5F5F5;
+    margin-top: 5em;
+    width:40%;
+    margin-left:30%;
+    border-radius: 4px;
+    padding-bottom: 2em;
+}
+
+.addedoverlaycontent h2{
+    padding-top:1em;
+    text-align:center;
+    position:relative;
+    color:#303030;
+    font-family: Helvetica, sans-serif;
+}
+
+.addedoverlaycontent p{
+    color:#A0A0A0;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    margin-top:1em;
+    margin-left:4.4em;
+}
+
+select{
+    color:gray;
+}
+
+#closeO{
+    margin-left:90%;
+    padding: 8px;
+    padding-right: 12px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #303030;
+    display: block;
+    transition: 0.3s;
+}
+
+.none{
+    text-decoration: none;
+}
